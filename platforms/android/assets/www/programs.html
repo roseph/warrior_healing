@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="css/themes/warrior.min.css" />
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.1/jquery.mobile.structure-1.4.1.min.css" />
+        <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $width=$('#content').width();
+                $('#content object').css({
+                    'max-width' : $width , 'height' : 'auto'
+                });
+            });
+        </script>
+        <title>Warrior Healing</title>
+</head>
+<body>
+	<center>
+	 <div data-role="header" class="header" data-position="fixed" data-add-back-btn="true">
+            <a href='#' class='ui-btn ui-icon-home ui-btn-left ui-btn-icon-left' onclick="history.back(); return false">Home</a>
+            <h1> Warrior Healing </h1>
+     </div>
+
+     <br>
+     <br>
+
+	<object data="http://public.tableausoftware.com/views/TeamDukes_ActivitiesMap/Dashboard1?:embed=y&:display_count=no#1" id="content" height="600" width="700"></object>
+
+	<br>
+    <br>
+
+	<div data-role="footer" data-position="fixed">
+            <input type="button" value="Chat on Facebook Here" onclick="window.location.href='http://www.facebook.com/WarriorHealing'"></input>
+                        
+            <input type="button" value="Follow on Twitter Here" onclick="window.location.href='http://www.twitter.com/WarriorHealing'"></input>
+    </div>
+	</center>
+</body>
+</html>

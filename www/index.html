@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="css/themes/warrior.min.css" />
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.1/jquery.mobile.structure-1.4.1.min.css" />
+        <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $width=$('#content').width();
+                $('#content img').css({
+                    'max-width' : $width , 'height' : 'auto'
+                });
+                
+            });
+        </script>
+        <title>Warrior Healing</title>
+    </head>
+    <body>
+        <center>
+
+        <div data-role="header" class="header" data-position="fixed">
+            <h1>Warrior Healing</h1>
+        </div>
+
+        <h1 class="title">Welcome to Warrior Healing!</h1>
+
+        <p class="intro">
+            The purpose and goal of this application is to assist our wounded warriors
+            in finding the treatment that best suits their individual needs. 
+        </p>
+
+        <br>
+
+        <p class="next">
+            How would you like to proceed?
+        </p>
+
+        <div role="main" class="ui-content">
+            <form action="#" method="get">
+                <input type="button" value="Search Events and Competitions" onclick="window.location.href='events.html'"></input>
+            </form>
+        </div>
+
+        <div role="main" class="ui-content">
+            <form action="#" method="get">
+                <input type="button" value="Search Programs and Demos" onclick="window.location.href='programs.html'"></input>
+            </form>
+        </div>
+
+        <div id="wrapper">
+            <div id="content"> <img src="img/warrior2.png" class="img1"></div>
+        </div>
+
+        <br>
+
+        <div data-role="footer" data-position="fixed">
+            <input type="button" value="Chat on Facebook Here" onclick="window.location.href='http://www.facebook.com/WarriorHealing'"></input>
+                        
+            <input type="button" value="Follow on Twitter Here" onclick="window.location.href='http://www.twitter.com/WarriorHealing'"></input>
+        </div>
+        </center>
+    </body>
+</html>
